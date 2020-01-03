@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oa7-Eo-NgF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ImagePicker-->
+        <scene sceneID="nkm-Bh-Lvc">
+            <objects>
+                <viewController id="oa7-Eo-NgF" customClass="ImagePickerController" customModule="RxswiftExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Um-bd-z9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bp7-kk-ckp">
+                                <rect key="frame" x="20" y="108" width="374" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="sUK-Fi-OfR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9E-ZX-2jx">
+                                <rect key="frame" x="180" y="378" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXY-dU-XjS">
+                                <rect key="frame" x="183" y="428" width="48" height="30"/>
+                                <state key="normal" title="Gallery"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCF-3S-bHr">
+                                <rect key="frame" x="190" y="478" width="34" height="30"/>
+                                <state key="normal" title="Crop"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Bp7-kk-ckp" firstAttribute="centerX" secondItem="2Um-bd-z9Q" secondAttribute="centerX" id="642-Fq-Onv"/>
+                            <constraint firstItem="n9E-ZX-2jx" firstAttribute="top" secondItem="Bp7-kk-ckp" secondAttribute="bottom" constant="20" id="Fen-Oq-kFN"/>
+                            <constraint firstItem="FeJ-aB-wQ6" firstAttribute="trailing" secondItem="Bp7-kk-ckp" secondAttribute="trailing" constant="20" id="LUH-kU-7yD"/>
+                            <constraint firstItem="Bp7-kk-ckp" firstAttribute="top" secondItem="FeJ-aB-wQ6" secondAttribute="top" constant="20" id="UcS-Su-4l4"/>
+                            <constraint firstItem="GXY-dU-XjS" firstAttribute="top" secondItem="n9E-ZX-2jx" secondAttribute="bottom" constant="20" id="Y6M-qa-yQm"/>
+                            <constraint firstItem="n9E-ZX-2jx" firstAttribute="centerX" secondItem="2Um-bd-z9Q" secondAttribute="centerX" id="Yhj-TN-WSC"/>
+                            <constraint firstItem="kCF-3S-bHr" firstAttribute="centerX" secondItem="2Um-bd-z9Q" secondAttribute="centerX" id="eGh-OP-Gjb"/>
+                            <constraint firstItem="GXY-dU-XjS" firstAttribute="centerX" secondItem="2Um-bd-z9Q" secondAttribute="centerX" id="obb-ny-3gt"/>
+                            <constraint firstItem="Bp7-kk-ckp" firstAttribute="leading" secondItem="FeJ-aB-wQ6" secondAttribute="leading" constant="20" id="sFp-RN-lsz"/>
+                            <constraint firstItem="kCF-3S-bHr" firstAttribute="top" secondItem="GXY-dU-XjS" secondAttribute="bottom" constant="20" id="vzc-Ls-fXb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FeJ-aB-wQ6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ImagePicker" id="KaF-9T-VXh"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="n9E-ZX-2jx" id="oeG-8C-RWi"/>
+                        <outlet property="cropButton" destination="kCF-3S-bHr" id="g2u-VV-WSo"/>
+                        <outlet property="galleryButton" destination="GXY-dU-XjS" id="RTK-VP-tBV"/>
+                        <outlet property="imageView" destination="Bp7-kk-ckp" id="dXU-qW-HPl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eq1-ti-3fg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1449" y="-418"/>
+        </scene>
+    </scenes>
+</document>

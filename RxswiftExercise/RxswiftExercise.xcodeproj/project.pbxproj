@@ -18,6 +18,9 @@
 		525F549E23AB20C100804A4B /* RxswiftExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F549D23AB20C100804A4B /* RxswiftExerciseTests.swift */; };
 		525F54A923AB20C100804A4B /* RxswiftExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F54A823AB20C100804A4B /* RxswiftExerciseUITests.swift */; };
 		525F54B923AB24FA00804A4B /* SVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F54B823AB24FA00804A4B /* SVViewController.swift */; };
+		52C23DE623BF165700C3686F /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C23DE523BF165700C3686F /* ImagePicker.storyboard */; };
+		52C23DEA23BF171F00C3686F /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C23DE923BF171F00C3686F /* ImagePickerController.swift */; };
+		52C23DF023BF1B9800C3686F /* UIImagePickerConterller+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C23DEF23BF1B9700C3686F /* UIImagePickerConterller+RxCreate.swift */; };
 		D36330D07C2C460C912A3634 /* Pods_RxswiftExerciseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DDB9C6FF9EC436254C770A /* Pods_RxswiftExerciseUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		525F54A823AB20C100804A4B /* RxswiftExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxswiftExerciseUITests.swift; sourceTree = "<group>"; };
 		525F54AA23AB20C100804A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525F54B823AB24FA00804A4B /* SVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVViewController.swift; sourceTree = "<group>"; };
+		52C23DE523BF165700C3686F /* ImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
+		52C23DE923BF171F00C3686F /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		52C23DEF23BF1B9700C3686F /* UIImagePickerConterller+RxCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerConterller+RxCreate.swift"; sourceTree = "<group>"; };
 		97A13B95C4DA8BA697490F16 /* Pods-RxswiftExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxswiftExercise.debug.xcconfig"; path = "Target Support Files/Pods-RxswiftExercise/Pods-RxswiftExercise.debug.xcconfig"; sourceTree = "<group>"; };
 		A42085E18A64C9DCD47F9ED0 /* Pods_RxswiftExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxswiftExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A384A4B5EFB3366A2B47DD /* Pods-RxswiftExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxswiftExerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-RxswiftExerciseTests/Pods-RxswiftExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 		525F548523AB20BB00804A4B /* RxswiftExercise */ = {
 			isa = PBXGroup;
 			children = (
+				52C23DE423BEED4000C3686F /* ImagePicker */,
 				525F548623AB20BB00804A4B /* AppDelegate.swift */,
 				525F548823AB20BB00804A4B /* SceneDelegate.swift */,
 				525F548A23AB20BB00804A4B /* ViewController.swift */,
@@ -156,6 +163,16 @@
 				525F54AA23AB20C100804A4B /* Info.plist */,
 			);
 			path = RxswiftExerciseUITests;
+			sourceTree = "<group>";
+		};
+		52C23DE423BEED4000C3686F /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				52C23DE523BF165700C3686F /* ImagePicker.storyboard */,
+				52C23DE923BF171F00C3686F /* ImagePickerController.swift */,
+				52C23DEF23BF1B9700C3686F /* UIImagePickerConterller+RxCreate.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 		909E32885ED8A83F5F86BA4A /* Pods */ = {
@@ -243,6 +260,7 @@
 				TargetAttributes = {
 					525F548223AB20BB00804A4B = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					525F549823AB20C100804A4B = {
 						CreatedOnToolsVersion = 11.3;
@@ -281,6 +299,7 @@
 			files = (
 				525F549323AB20C100804A4B /* LaunchScreen.storyboard in Resources */,
 				525F549023AB20C100804A4B /* Assets.xcassets in Resources */,
+				52C23DE623BF165700C3686F /* ImagePicker.storyboard in Resources */,
 				525F548E23AB20BC00804A4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +413,8 @@
 			files = (
 				525F548B23AB20BB00804A4B /* ViewController.swift in Sources */,
 				525F54B923AB24FA00804A4B /* SVViewController.swift in Sources */,
+				52C23DEA23BF171F00C3686F /* ImagePickerController.swift in Sources */,
+				52C23DF023BF1B9800C3686F /* UIImagePickerConterller+RxCreate.swift in Sources */,
 				525F548723AB20BB00804A4B /* AppDelegate.swift in Sources */,
 				525F548923AB20BB00804A4B /* SceneDelegate.swift in Sources */,
 			);
@@ -569,6 +590,7 @@
 			baseConfigurationReference = 97A13B95C4DA8BA697490F16 /* Pods-RxswiftExercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZV68F9UP8K;
 				INFOPLIST_FILE = RxswiftExercise/Info.plist;
@@ -578,6 +600,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aa.RxswiftExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxswiftExercise/ImagePicker/RxswiftExercise-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,6 +612,7 @@
 			baseConfigurationReference = E2F6A24F331FFA94985A29B0 /* Pods-RxswiftExercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZV68F9UP8K;
 				INFOPLIST_FILE = RxswiftExercise/Info.plist;
@@ -597,6 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aa.RxswiftExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxswiftExercise/ImagePicker/RxswiftExercise-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
