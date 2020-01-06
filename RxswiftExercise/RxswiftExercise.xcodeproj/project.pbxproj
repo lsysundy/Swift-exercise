@@ -18,6 +18,9 @@
 		525F549E23AB20C100804A4B /* RxswiftExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F549D23AB20C100804A4B /* RxswiftExerciseTests.swift */; };
 		525F54A923AB20C100804A4B /* RxswiftExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F54A823AB20C100804A4B /* RxswiftExerciseUITests.swift */; };
 		525F54B923AB24FA00804A4B /* SVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F54B823AB24FA00804A4B /* SVViewController.swift */; };
+		52A934F423C3158C0013619C /* SimpleTableViewExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A934F323C3158C0013619C /* SimpleTableViewExample.storyboard */; };
+		52A934F623C315A10013619C /* SimpleTableViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A934F523C315A10013619C /* SimpleTableViewExampleViewController.swift */; };
+		52A934F823C319AF0013619C /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A934F723C319AF0013619C /* Wireframe.swift */; };
 		52C23DE623BF165700C3686F /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C23DE523BF165700C3686F /* ImagePicker.storyboard */; };
 		52C23DEA23BF171F00C3686F /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C23DE923BF171F00C3686F /* ImagePickerController.swift */; };
 		52C23DF023BF1B9800C3686F /* UIImagePickerConterller+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C23DEF23BF1B9700C3686F /* UIImagePickerConterller+RxCreate.swift */; };
@@ -58,6 +61,9 @@
 		525F54A823AB20C100804A4B /* RxswiftExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxswiftExerciseUITests.swift; sourceTree = "<group>"; };
 		525F54AA23AB20C100804A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525F54B823AB24FA00804A4B /* SVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVViewController.swift; sourceTree = "<group>"; };
+		52A934F323C3158C0013619C /* SimpleTableViewExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleTableViewExample.storyboard; sourceTree = "<group>"; };
+		52A934F523C315A10013619C /* SimpleTableViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewExampleViewController.swift; sourceTree = "<group>"; };
+		52A934F723C319AF0013619C /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		52C23DE523BF165700C3686F /* ImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
 		52C23DE923BF171F00C3686F /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		52C23DEF23BF1B9700C3686F /* UIImagePickerConterller+RxCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerConterller+RxCreate.swift"; sourceTree = "<group>"; };
@@ -136,12 +142,14 @@
 		525F548523AB20BB00804A4B /* RxswiftExercise */ = {
 			isa = PBXGroup;
 			children = (
+				52A934F223C315670013619C /* SimpleTableViewExample */,
 				52C23DF123BF25AC00C3686F /* Extensions */,
 				52C23DE423BEED4000C3686F /* ImagePicker */,
 				525F548623AB20BB00804A4B /* AppDelegate.swift */,
 				525F548823AB20BB00804A4B /* SceneDelegate.swift */,
 				525F548A23AB20BB00804A4B /* ViewController.swift */,
 				525F54B823AB24FA00804A4B /* SVViewController.swift */,
+				52A934F723C319AF0013619C /* Wireframe.swift */,
 				525F548C23AB20BC00804A4B /* Main.storyboard */,
 				525F548F23AB20C100804A4B /* Assets.xcassets */,
 				525F549123AB20C100804A4B /* LaunchScreen.storyboard */,
@@ -166,6 +174,15 @@
 				525F54AA23AB20C100804A4B /* Info.plist */,
 			);
 			path = RxswiftExerciseUITests;
+			sourceTree = "<group>";
+		};
+		52A934F223C315670013619C /* SimpleTableViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				52A934F323C3158C0013619C /* SimpleTableViewExample.storyboard */,
+				52A934F523C315A10013619C /* SimpleTableViewExampleViewController.swift */,
+			);
+			path = SimpleTableViewExample;
 			sourceTree = "<group>";
 		};
 		52C23DE423BEED4000C3686F /* ImagePicker */ = {
@@ -309,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525F549323AB20C100804A4B /* LaunchScreen.storyboard in Resources */,
+				52A934F423C3158C0013619C /* SimpleTableViewExample.storyboard in Resources */,
 				525F549023AB20C100804A4B /* Assets.xcassets in Resources */,
 				52C23DE623BF165700C3686F /* ImagePicker.storyboard in Resources */,
 				525F548E23AB20BC00804A4B /* Main.storyboard in Resources */,
@@ -427,6 +445,8 @@
 				52C23DF323BF25C300C3686F /* UIImagePickerController+Rx.swift in Sources */,
 				52C23DEA23BF171F00C3686F /* ImagePickerController.swift in Sources */,
 				52C23DF023BF1B9800C3686F /* UIImagePickerConterller+RxCreate.swift in Sources */,
+				52A934F823C319AF0013619C /* Wireframe.swift in Sources */,
+				52A934F623C315A10013619C /* SimpleTableViewExampleViewController.swift in Sources */,
 				525F548723AB20BB00804A4B /* AppDelegate.swift in Sources */,
 				525F548923AB20BB00804A4B /* SceneDelegate.swift in Sources */,
 			);
@@ -604,7 +624,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZV68F9UP8K;
+				DEVELOPMENT_TEAM = 7HK2Q8XPT5;
 				INFOPLIST_FILE = RxswiftExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,7 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZV68F9UP8K;
+				DEVELOPMENT_TEAM = 7HK2Q8XPT5;
 				INFOPLIST_FILE = RxswiftExercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

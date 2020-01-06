@@ -6,15 +6,18 @@
 //  Copyright © 2019 刘帅仪. All rights reserved.
 //
 
-import UIKit
+import RxSwift
 
-class ViewController: UIViewController {
+#if os(iOS)
+    import UIKit
+    typealias OSViewController = UIViewController
+#elseif os(macOS)
+    import Cocoa
+    typealias OSViewController = UIViewController
+#endif
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+class ViewController: OSViewController {
+    var disposeBag = DisposeBag()
+    
 }
 
